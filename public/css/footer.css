@@ -1,0 +1,26 @@
+footer{
+    background-color: white;
+    padding-top: 20px;
+}
+footer section{
+text-align: center;
+padding: 20px 50px;
+}
+footer section i{
+    color: var(--celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+
+    
+}
+footer section h3{
+    font-size: var(--descripcion);
+    color: var(--grisoscuro)
+}
+footer section p{
+    -color: var(--grisclaro)
+}
+footer p{
+  color: var(--grisoscuro);
+  margin-left: 10px;  
+}

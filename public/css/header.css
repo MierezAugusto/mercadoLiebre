@@ -1,0 +1,34 @@
+header{
+    background-color: var(--amarillo);
+    padding: 10px;
+    }
+    header img{
+    width: 50%;
+    }
+    header form{
+        width: 50%;
+    
+    }
+    header form input {
+        width: 85%;
+    }
+    
+    header p{
+        margin: 10px 0;
+        text-align: center;
+    
+    }
+  /*   header nav{
+        display:none;
+    } */
+    header .burger-menu{
+        text-align: center;
+        padding: 10px 0;
+    }
+    header .burger-menu i{
+        border-radius: 5px;
+        padding:10px;
+        color: white;
+        background-color: var(--celeste);
+        font-size: var(--descripcion); 
+    }
