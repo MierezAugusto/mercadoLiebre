@@ -20,6 +20,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: var(--grisclaro);
+  font-size: var(--cuerpo);
+}
+main img {
+  width: 100%;
+}
 
 li {
   list-style: none;

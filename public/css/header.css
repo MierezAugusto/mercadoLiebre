@@ -18,9 +18,9 @@ header{
         text-align: center;
     
     }
-  /*   header nav{
-        display:none;
-    } */
+    header nav{
+        display:none;}
+    
     header .burger-menu{
         text-align: center;
         padding: 10px 0;
@@ -31,4 +31,16 @@ header{
         color: white;
         background-color: var(--celeste);
         font-size: var(--descripcion); 
+    }
+    .pagos{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    @media (min-width: 361px){
+        header nav{
+            display:block;}
+        header .burger-menu{
+            display:none;}
+        
     }
