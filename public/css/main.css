@@ -3,7 +3,7 @@ main .banner{
     display:none
     }
 main section{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
 }
     
@@ -34,7 +34,10 @@ main section article i{
     height: 30px;
     border: 1px solid var(--verde);
     color: var(--verde);
-    border-radius: 50%;  
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
     
     main section article p{
@@ -43,11 +46,26 @@ main section article i{
     }
     
     @media(min-width: 361px){
+
+        main .banner{
+            display:block
+        }
         main section article .contenedor h4{
             display: block;
         }
+        main section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
         main section article{
             box-shadow: 0px 0px 10px rgb(100, 100, 100);
-
-    } 
+            width: 46%;
+            margin: 5px;
+        } 
 }   
+
+@media(min-width: 769px){
+    main section article{
+        width: 22%;}
+    }
