@@ -7,42 +7,79 @@ main section{
         margin: 0 auto;
 }
     
-main section h2{
+main h2{
     font-size: var(--titulares);
     margin: 10px 0;
     
 }
 main section article{
-    background-color: white;
-    margin: 5px 0;
-      
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 300ms;
+    margin: 30px 0;
+  }
+main section article .contenedor span {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--verde);
+    margin: 0 0 0 10px;
+  }
+main section article:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 main section article .contenedor{
     padding: 20px;
     border-top: 1px solid var(--grisclaro);
     position: relative;
 }
+main section article:hover .contenedor{
+    padding-bottom: 50px;
+    border-top: 1px solid var(--grisclaro);
+    position: relative;
+}
 main section article .contenedor h4{
-    padding-top: 20px;
+    padding-top: 10px;
     display: none; 
 } 
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid var(--verde);
-    color: var(--verde);
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
+main section article:hover .contenedor h4{
+  /*   height: 40px;
+  margin-top: 15px;  */
+  font-size: 2.0em;
+  width: 100%;
+  color: var(--grisoscuro);
+  margin: 0;
+  height: 0;
+  transition: 300ms;
+  overflow: visible;
+  display: block;
 }
-    
+main section article i{
+    color: var(--verde);
+  font-size: 1.8em;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border: solid 1px;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+padding-top: 6px;
+}
+main section article:hover i{
+    transform: rotate(-90deg);
+    box-shadow: 0 0 5px var(--green);  
+}    
     main section article p{
-        color: var(--verde);
-        margin: 10px 0;
+        font-size: 2.4em;
+        font-weight: 300;
+        margin: 0;
     }
     
     @media(min-width: 361px){
@@ -50,9 +87,7 @@ main section article i{
         main .banner{
             display:block
         }
-        main section article .contenedor h4{
-            display: block;
-        }
+       
         main section{
             display: flex;
             flex-wrap: wrap;

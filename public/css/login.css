@@ -8,6 +8,7 @@
 .login-seccion{
     width: 55%;
     margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 .login-seccion form{
@@ -35,6 +36,9 @@
     text-align: center;
     width: 100%;
     
+}
+.login-seccion .enviarLogin:hover{
+    background-color: #0022AA;
 }
 
 @media (min-width:768px){

@@ -1,10 +1,16 @@
 footer{
     background-color: white;
     padding-top: 20px;
+    justify-content: space-around;
+    display: block;
 }
+
+
 footer section{
+    width: 70%;
 text-align: center;
 padding: 20px 50px;
+
 }
 footer section i{
     color: var(--celeste);
@@ -23,4 +29,35 @@ footer section p{
 footer p{
   color: var(--grisoscuro);
   margin-left: 10px;  
+}
+
+  .footerseccion{
+    width: 100%;
+  }
+  .footerseccion article{
+    text-align: center;
+    width: 30%;
+    display: inline-block;
+
+    
+  }
+  .footerseccion article:hover{
+      background-color: #eac926;
+  }
+  .footerseccion h4{
+      text-align: left;
+  }
+
+@media(max-width: 769){
+footer{
+    display: inline-flex;
+    justify-content: center;
+}
+    
+
+.footerseccion article{
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
 }
